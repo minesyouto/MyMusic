@@ -12,10 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack{
-            Image("background")
-                .resizable()
-                .ignoresSafeArea()
-                .aspectRatio(contentMode: .fill)
+            BackgroundView(imageName: "background")
             HStack {
                 Button(action: {
                     soundPlayer.cymbalPlay()
